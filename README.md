@@ -46,9 +46,11 @@ edge   -a  10.16.254.254 -c daququ-n2n-net -k key -l x.x.x.x:12321 -p 12321
                 killall edge
         }
         
-chmod u+x /etc/init.d/n2n enable
-/etc/init.d/n2n enable
-/etc/init.d/n2n start
+        chmod u+x /etc/init.d/n2n enable
+
+        /etc/init.d/n2n enable
+
+        /etc/init.d/n2n start
 
 
 ## Usage
