@@ -35,6 +35,20 @@ opkg install n2n-edge_2.1_git8347c66-1_arm_cortex-a9_vfpv3.ipk
 
 edge   -a  10.16.254.254 -c daququ-n2n-net -k key -l x.x.x.x:12321 -p 12321
 
+###  /etc/init.d/n2n
+
+        #!/bin/sh /etc/rc.common
+        START=99
+        start(){
+                edge   ...
+        }
+        stop(){
+                killall edge
+        }
+        
+chmod u+x /etc/init.d/n2n enable
+/etc/init.d/n2n enable
+/etc/init.d/n2n start
 
 
 ## Usage
